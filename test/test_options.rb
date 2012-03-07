@@ -5,6 +5,7 @@ require_relative '../lib/anagram/options'
 
 class TestOptions < Test::Unit::TestCase
   
+	#Nuevo comentario
   context "specifying no dictionary" do
     should "return default" do
       opts = Anagram::Options.new(["someword"])
@@ -34,3 +35,4 @@ class TestOptions < Test::Unit::TestCase
   end      
 end
 
+	#Otro nuevo comentario
