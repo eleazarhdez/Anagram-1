@@ -21,6 +21,7 @@ OptionParser.new do |opts|
 end
 
 # Ordena las palabras
+# HOTFIX: Habia que comentar una cosa!
 def signature_of(word)
   word.unpack("c*").sort.pack("c*")
 end
@@ -32,6 +33,7 @@ File.foreach(dictionary) do |line|
   signatures[signature] << word
 end
 
+# Mira que bonito es este HOTFIX
 ARGV.each do |word|
   s = signature_of(word)
   if signatures[s].length != 0
